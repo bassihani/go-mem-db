@@ -24,7 +24,7 @@ engineMap := db.NewEngineMap()
 dbmanager := db.NewDBManager(engineMap)
 
 // Set a value
-dbmanager.Set("Emp1", 196000)
+dbmanager.Set("Emp1", 196000
 
 // Get a value
 val, err := dbmanager.Get("Emp1")
