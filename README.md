@@ -17,6 +17,7 @@ Clean API: Simple Set, Get, and Remove methods.📂 Project StructurePlaintextgo
 ├── pkg/utils/                 # Helpers (Time, ID generation)
 ├── go.mod                     # Go module definition
 └── Makefile                   # Build and test shortcuts
+
 (Structure derived from)🛠 Getting StartedPrerequisitesGo 1.25.6 or higher InstallationClone the repository and install dependencies:Bashgo mod download
 Makefile CommandsThe project includes a Makefile for common tasks:CommandDescriptionmake buildCompiles the project into bin/go-memdbmake runBuilds and runs the applicationmake testRuns unit tests for the DB and Utilsmake test_raceRuns tests with the Go race detector enabledmake cleanRemoves binaries and clears Go caches💻 Usage ExampleYou can inject different engines into the DBManager depending on your needs:Go// Using the Map Engine
 engineMap := db.NewEngineMap()
